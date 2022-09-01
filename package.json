@@ -1,0 +1,33 @@
+{
+  "name": "chat-app",
+  "version": "1.0.0",
+  "description": "Chat app with node.js and socket.io",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/stevesdiary/chat-app.git"
+  },
+  "keywords": [
+    "chat",
+    "socket.io",
+    "node.js",
+    "app"
+  ],
+  "author": "Stephen Oyeyemi",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/stevesdiary/chat-app/issues"
+  },
+  "homepage": "https://github.com/stevesdiary/chat-app#readme",
+  "dependencies": {
+    "express": "^4.18.1",
+    "socket.io": "^4.5.1",
+    "socket.io-client": "^4.5.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.19"
+  }
+}
