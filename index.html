@@ -29,11 +29,15 @@
       const messageContainer = document.getElementById("message-container");   
       var form = document.getElementById('form');
       var input = document.getElementById('input');
-
+// end to end conversation
       form.addEventListener('submit', function(e) {
       console.log(input.value);
          e.preventDefault();
          if (input.value) {
+            var item = document.createElement('li');
+         item.textContent = input.value;
+         messages.appendChild(item);
+         window.scrollTo(0, document.body.scrollHeight);
          socket.emit('chatmessage', input.value);
          input.value = '';
          }
@@ -92,4 +96,4 @@
    </head>
    <body>
 
- -->
+-->
